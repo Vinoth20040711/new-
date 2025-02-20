@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Photography Studio for Portraits, Events, and More">
+    <title>Photo Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Photo Studio Logo" />
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#booking">Book a Session</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to Our Photo Studio</h1>
+            <p>Capturing moments, creating memories.</p>
+            <a href="#booking" class="btn-primary">Book a Session</a>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Our Work</h2>
+        <div class="gallery">
+            <div class="gallery-item"><img src="image1.jpg" alt="Portfolio 1"></div>
+            <div class="gallery-item"><img src="image2.jpg" alt="Portfolio 2"></div>
+            <div class="gallery-item"><img src="image3.jpg" alt="Portfolio 3"></div>
+            <div class="gallery-item"><img src="image4.jpg" alt="Portfolio 4"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <h3>Portrait Photography</h3>
+                <p>Get your professional portrait taken in our modern studio setting.</p>
+            </div>
+            <div class="service-item">
+                <h3>Event Photography</h3>
+                <p>Capture the best moments of your special events with us.</p>
+            </div>
+            <div class="service-item">
+                <h3>Product Photography</h3>
+                <p>Showcase your products with stunning, high-quality images.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking">
+        <h2>Book Your Session</h2>
+        <form action="/submit-booking" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="service">Choose a Service</label>
+            <select id="service" name="service">
+                <option value="portrait">Portrait Photography</option>
+                <option value="event">Event Photography</option>
+                <option value="product">Product Photography</option>
+            </select>
+
+            <button type="submit" class="btn-primary">Submit Booking</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@photostudio.com</p>
+        <p>Phone: +1 (234) 567-8900</p>
+        <p>Follow us on social media: Instagram, Facebook, Twitter</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Photo Studio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
